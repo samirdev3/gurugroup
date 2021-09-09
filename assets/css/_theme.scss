@@ -1,0 +1,91 @@
+.primary-color{
+    color: $primaryColor !important;
+}
+.bg-primary{
+    background-color: $primaryColor;
+}
+.ny-button{
+    border: none;
+    background-color: $primaryColor;
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 25px;
+    border-radius: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    font-family: 'Quicksand', sans-serif;
+    &._black{
+        background-color: black;
+        color: #fff;
+    }
+    &._white{
+        background-color: white;
+        color: #000;
+    }
+    &._big{
+        font-size: 120%;
+        padding: 15px 35px;
+    }
+}
+.bg-black{
+    background-color: black;
+    color: #fff;
+}
+.big-title{
+    font-size: 4rem;
+}
+.ny-title{
+    font-size: 3rem;
+}
+.ny--title{
+    font-size: 2.2rem;
+}
+.shape_btn{
+    position: relative;
+    display: inline-block;
+    line-height: 0;
+    img{
+        height: 200px;
+    }
+    ._txt{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, 50%);
+    }
+}
+.shape_btn.dark{
+    color: #fff;
+}
+._inline{
+    li{
+        display: inline-block; 
+    }
+}
+section{
+    position: relative;
+}
+.event-none{
+    pointer-events: none;
+}
+.grayscale{
+    filter: grayscale(100);
+}
+.z-index-back{
+    z-index: 5;
+}
+.z-index-front{
+    z-index: 20;
+}
+
+@media (max-width: 767px) {
+    .big-title{
+        font-size: 2.6rem;
+    }
+    .ny-title{
+        font-size: 2.6rem;
+    }
+    .ny--title{
+        font-size: 1.8rem;
+    }
+}
