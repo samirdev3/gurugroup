@@ -592,6 +592,17 @@ img {
   opacity: 1;
 }
 
+@media only screen and (max-width: 767px) {
+  .videoWrapper {
+    position: absolute;
+    padding: 0;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+}
+
 body {
   min-height: 100vh;
 }

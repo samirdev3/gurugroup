@@ -30,4 +30,8 @@ $(document).ready(function(){
         $('#landing').find('.landing__cover').removeClass('video-active');
         $('#landing').find('.landing__cover.default').addClass('video-active');
     });
+    if($(window).width() < 768){
+        var winHeight = $(window).height();
+        $('.hero_video').css({'height': winHeight+'px', 'width': (winHeight*1.8)+'px'});
+    }
 });
