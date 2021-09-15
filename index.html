@@ -10,7 +10,11 @@
 </head>
 <body class="home">
 
-<div id="overlay">
+<div id="preloader">
+    <div class="loading">loading</div>
+</div> <!-- preloader -->
+
+<div id="menu-fullscreen">
     <a href="#">Link1</a>
     <a href="#">Link2</a>
     <a href="#">Link3</a>
@@ -28,19 +32,11 @@
 
 <section id="landing">
     <div class="landing__cover default video-active">
-        <div class="videoWrapper">
-            <div id="youtubeEmbed" class="hero_video" data-video-id="w0jPhxzHQ4s"></div>
-            <!-- <video loop="" muted="" playsinline="" autoplay="autoplay">
-                <source src="https://player.vimeo.com/external/445157273.sd.mp4?s=2bd5faa7bedb75821e249cec6291a04fa059c813&amp;profile_id=165" type="video/mp4">
-            </video> -->
-        </div>
+        <!-- <div id="youtubeEmbed" class="hero_video" data-video-id="w0jPhxzHQ4s"></div> -->
+        <div class="pre__video" data-src="assets/videos/default.mp4"></div>
     </div> <!--default-->
     <div class="landing__cover one">
-        <div class="videoWrapper">
-            <video loop="" muted="" playsinline="" autoplay="autoplay">
-                <source src="https://player.vimeo.com/external/418068499.sd.mp4?s=3e17c52a9c949bc6fa1e6ab16b7c4214b989f7f9&amp;profile_id=165" type="video/mp4">
-            </video>
-        </div>
+        <div class="pre__video" data-src="https://player.vimeo.com/external/418068499.sd.mp4?s=3e17c52a9c949bc6fa1e6ab16b7c4214b989f7f9&amp;profile_id=165"></div>
     </div> <!--1-->
 
     <div class="container">
@@ -64,7 +60,6 @@
 <!--landing-banner-->
 
 <!--js-->
-<script src="assets/js/init.js"></script>
 <script src="assets/js/jquery-3.6.0.min.js"></script>
 <script src="assets/js/app.js"></script>
 </body>
