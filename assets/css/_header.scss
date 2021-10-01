@@ -1,0 +1,93 @@
+header{
+    position: fixed;
+    top: 0;
+    z-index: 120;
+    width: 100%;
+    padding: 2rem 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: padding 0.4s ease-in-out;
+    .logo{
+        height: 40px;
+        a{
+            display: inline-block;
+            width: 128px;
+            height: 40px;
+            background-color: transparent;
+            background-image: url(../images/logo.png);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            transition: background 0.2s ease-in-out;
+            &:hover{
+                background-image: url(../images/logo-original.png);
+            }
+        }
+    }
+    #hamburger {
+        opacity: 1;
+        cursor: pointer;
+        transition: opacity 0.25s linear;
+        width: 30px;
+        height: 40px;
+        display: flex;
+        align-items: center;
+        div,
+        div:after,
+        div:before {
+            background-color: white;
+            width: 30px;
+            height: 3px;
+            transition: all 0.15s linear;
+        }
+        div:before,
+        div:after {
+            content: "";
+            position: absolute;
+        }
+        div:before {
+            transform: translateY(-250%);
+            width: 20px;
+        }
+        div:after {
+            transform: translateY(250%);
+        }
+        &:hover{
+            div:before{
+                width: 30px;
+                transition: width 0.2s ease-in-out;
+            }
+        }
+        &.open div {
+            background: transparent;
+        }
+        &.open div:before {
+            transform: rotate(45deg);
+            width: 30px;
+        }
+        &.open div:after {
+            transform: rotate(-45deg);
+        }
+    }
+    &.sticky{
+        padding: 10px 15px;
+        background-color: white;
+        box-shadow: 0 3px 18px 0 rgba(0,0,0,.1);
+        .logo{
+            a{
+                background-image: url(../images/logo-original.png);
+            }
+        }
+        #hamburger {
+            div,
+            div:after,
+            div:before {
+                background-color: black;
+            }
+            &.open div {
+                background: transparent;
+            }
+        }
+    }
+}

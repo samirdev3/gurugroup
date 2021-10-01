@@ -1,0 +1,52 @@
+$col-list: (
+  1   8.3333333333%,
+  2   16.666667%,
+  3   25%,
+  4   33.3333333333%,
+  5   41.666667%,
+  6   50%,
+  7   58.333333%,
+  8   66.666667%,
+  9   75%,
+  10  83.333333%,
+  11  91.666667%,
+  12 100%
+);
+@mixin flexCol($values, $sizes) {
+    @each $var in $values {
+        @if $sizes == md {
+            .col-md-#{nth($var, 1)}{
+                flex: 0 0 auto;
+                width: nth($var, 2);
+            }
+            .offset-md-#{nth($var, 1)}{
+                margin-left: nth($var, 2);
+            }
+            
+        }@else if $sizes == sm {
+            .col-sm-#{nth($var, 1)}{
+                flex: 0 0 auto;
+                width: nth($var, 2);
+            }
+            .offset-sm-#{nth($var, 1)}{
+                margin-left: nth($var, 2);
+            }
+        }@else {
+            .col-#{nth($var, 1)}{
+                flex: 0 0 auto;
+                width: nth($var, 2);
+            }
+            .offset-#{nth($var, 1)}{
+                margin-left: nth($var, 2);
+            }
+        }
+    }
+}
+
+@mixin textAlign($values){
+    @each $var in $values {
+        .text-#{$var}{
+            text-align: #{$var};
+        }
+    }
+}

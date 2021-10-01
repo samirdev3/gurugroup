@@ -1,66 +1,363 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Guru Group</title>
     <!--css-->
-    <link rel="stylesheet" href="assets/css/style.css">
-</head>
-<body class="home">
-
-<div id="preloader">
-    <div class="loading">loading</div>
-</div> <!-- preloader -->
-
-<div id="menu-fullscreen">
-    <a href="#">Link1</a>
-    <a href="#">Link2</a>
-    <a href="#">Link3</a>
-    <a href="#">Link4</a>
-</div>
-<header>
-    <div class="logo">
-        <img src="assets/images/logo.png" alt="" height="40" width="128">
+    <link rel="stylesheet" href="assets/slick/slick.css">
+    <link rel="stylesheet" href="assets/slick/slick-theme.css">
+    <link rel="stylesheet" href="assets/css/style.min.css" />
+  </head>
+  <body class="home">
+      
+    <div id="preloader">
+        <div class="circ1"></div>
+        <div class="circ2"></div>
+        <div class="circ3"></div>
+        <div class="circ4"></div>
     </div>
-    <div id="hamburger">
+    <!-- preloader -->
+
+    <div id="menu-fullscreen">
+      <a href="#">Link1</a>
+      <a href="#">Link2</a>
+      <a href="#">Link3</a>
+      <a href="#">Link4</a>
+    </div>
+
+    <header>
+      <div class="logo">
+        <a href="index.html" title="GuruGroup"></a>
+        <h1 class="d-none">GuruGroup</h1>
+      </div>
+      <div id="hamburger">
         <div></div>
-    </div>
-</header>
-<!--header-->
+      </div>
+    </header>
+    <!--header-->
 
-<section id="landing">
-    <div class="landing__cover default video-active">
+    <section id="landing">
+      <div class="landing__cover default video-active">
         <!-- <div id="youtubeEmbed" class="hero_video" data-video-id="w0jPhxzHQ4s"></div> -->
-        <div class="pre__video" data-src="assets/videos/default.mp4"></div>
-    </div> <!--default-->
-    <div class="landing__cover one">
-        <div class="pre__video" data-src="https://player.vimeo.com/external/418068499.sd.mp4?s=3e17c52a9c949bc6fa1e6ab16b7c4214b989f7f9&amp;profile_id=165"></div>
-    </div> <!--1-->
+        <video loop="" muted="" playsinline="" autoplay="autoplay">
+          <source src="assets/videos/default.mp4" type="video/mp4" />
+        </video>
+      </div>
+      <!--default-->
+      <div class="landing__cover one">
+        <video loop="" muted="" playsinline="" autoplay="autoplay">
+          <source
+            src="https://player.vimeo.com/external/418068499.sd.mp4?s=3e17c52a9c949bc6fa1e6ab16b7c4214b989f7f9&amp;profile_id=165"
+            type="video/mp4"
+          />
+        </video>
+      </div>
+      <!--1-->
 
-    <div class="container">
+      <div class="container">
         <div class="landing__content">
-            <div class="landing__header"></div>
-            <div class="main-menu">
-                <ul>
-                    <li data-video="one"><a href="#">About us</a></li>
-                    <li><a href="#">Films</a></li>
-                    <li><a href="#">Web Series</a></li>
-                    <li><a href="#">Edutainment</a></li>
-                    <li><a href="#">Guru TV</a></li>
-                </ul>
+          <div class="landing__header"></div>
+          <div class="main-menu">
+            <ul>
+              <li data-video="one"><a href="#">About us</a></li>
+              <li><a href="#">Films</a></li>
+              <li><a href="#">Series</a></li>
+              <li><a href="#">Edutainment</a></li>
+            </ul>
+          </div>
+          <div class="info">
+            <p>
+              Guru Group is a South India Based Global Media Entertainment
+              Company that tells Magical Stories of Adventure and Fantasy from
+              diverse cultures with a Universal Appeal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!--landing-->
+
+    <section class="sections two">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col col-12 col-md-8">
+                    <p class="sub__title">WE LOVE STORYTELLING</p>
+                    <h2 class="title">DISCOVER GURU</h2>
+                    <p>As storytellers at Guru, we tell Inspiring, Empowering & Compelling stories from the past, present & future to Motivate, Transform & Uplift with diverse & Inclusive voices.</p>
+                </div>
             </div>
-            <div class="info">
-                <p>Guru Group is a South India Based Global Media Entertainment Company that tells Magical Stories of Adventure and Fantasy from diverse cultures with a Universal Appeal.</p>
+            <div class="d-flex">
+                <div class="col col-12 col-md-6 offset-md-3">
+                    <div class="slider-wrapper">
+                        <div class="prev__arrow arrow"></div>
+                        <div class="next__arrow arrow"></div>
+                        <div id="discover-slide" class="text-center">
+                            <div class="slide">
+                                <img src="assets/images/home/discover-slide-1.jpg" alt="" class="img-responsive">
+                                <p class="sub__title">WEBSERIES</p>
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/home/discover-slide-1.jpg" alt="" class="img-responsive">
+                                <p class="sub__title">WEBSERIES</p>
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/home/discover-slide-1.jpg" alt="" class="img-responsive">
+                                <p class="sub__title">WEBSERIES</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-</section>
-<!--landing-banner-->
+    </section>
 
-<!--js-->
-<script src="assets/js/jquery-3.6.0.min.js"></script>
-<script src="assets/js/app.js"></script>
-</body>
+    <section class="sections bg-grey three">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col col-12 col-md-8">
+                    <h2 class="title">PARTNERSHIPS</h2>
+                    <p>We believe in working together by forming meaningful partnerships that not only create opportunities but also enthral audiences around the world.</p>
+                </div>
+            </div>
+            <div class="d-flex text-center">
+                <div class="col col-12 col-md-4">
+                    <div class="partners">
+                        <img src="assets/images/home/partners-1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <p class="sub__title">SURESH PRODUCTIONS</p>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <div class="partners">
+                        <img src="assets/images/home/partners-1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <p class="sub__title">SURESH PRODUCTIONS</p>
+                </div>
+                <div class="col col-12 col-md-4">
+                    <div class="partners">
+                        <img src="assets/images/home/partners-1.jpg" alt="" class="img-responsive">
+                    </div>
+                    <p class="sub__title">SURESH PRODUCTIONS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections four">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col col-12 col-md-8">
+                    <h2 class="title">PROJECTS</h2>
+                    <p>Guru Films is our motion picture wing which primarily focuses on Telugu, Tamil, Hindi & English Lamguage Films on South Indian Themes for a Global Audience</p>
+                </div>
+            </div>
+            <div class="d-flex movies-wrap">
+                <div class="col-12 col-md-6 one">
+                    <div class="movies">
+                        <img src="assets/images/home/projects-1.jpg" alt="" class="img-responsive">
+                        <div class="summary">
+                            <div class="name">Courier Boy Kalyan (2015)</div>
+                            <div class="director">Director: Prem Sai</div>
+                            <div class="music">Music: Karthik, Anup Rebeens, Sandeep Chowta</div>
+                            <div class="cast">Cast: Nithin, Yami</div>
+                        </div>
+                    </div>
+                    <div class="movies">
+                        <img src="assets/images/home/projects-1.jpg" alt="" class="img-responsive">
+                        <div class="summary">
+                            <div class="name">Courier Boy Kalyan (2015)</div>
+                            <div class="director">Director: Prem Sai</div>
+                            <div class="music">Music: Karthik, Anup Rebeens, Sandeep Chowta</div>
+                            <div class="cast">Cast: Nithin, Yami</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="movies">
+                        <img src="assets/images/home/projects-1.jpg" alt="" class="img-responsive">
+                        <div class="summary">
+                            <div class="name">Courier Boy Kalyan (2015)</div>
+                            <div class="director">Director: Prem Sai</div>
+                            <div class="music">Music: Karthik, Anup Rebeens, Sandeep Chowta</div>
+                            <div class="cast">Cast: Nithin, Yami</div>
+                        </div>
+                    </div>
+                    <div class="movies">
+                        <img src="assets/images/home/projects-1.jpg" alt="" class="img-responsive">
+                        <div class="summary">
+                            <div class="name">Courier Boy Kalyan (2015)</div>
+                            <div class="director">Director: Prem Sai</div>
+                            <div class="music">Music: Karthik, Anup Rebeens, Sandeep Chowta</div>
+                            <div class="cast">Cast: Nithin, Yami</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections five">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col col-12 col-md-8">
+                    <h2 class="title">AWARDS</h2>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="col col-12 col-md-8 offset-md-2 text-center">
+                    <div class="quote">
+                        <p class="mb-0">“At Guru Group we believe that the pursuit of excellence has no end.</p>
+                        <p class="mb-0">We always strive to explore new horizons and push our limits in achieving our goals. </p>
+                        <p class="mb-0">Time and again our work has been acknowledged and appreciated.</p>
+                        <p class="mb-0">We take pride in sharing some of the accolades we have received.</p>
+                    </div>
+                </div>
+                <div class="col col-12 col-md-8 offset-md-2 text-center">
+                    <div class="d-flex">
+                        <div class="col col-6 col-md-3">
+                            <img src="assets/images/home/award-1.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col col-6 col-md-3">
+                            <img src="assets/images/home/award-2.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col col-6 col-md-3">
+                            <img src="assets/images/home/award-3.png" alt="" class="img-responsive">
+                        </div>
+                        <div class="col col-6 col-md-3">
+                            <img src="assets/images/home/award-4.png" alt="" class="img-responsive">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections bg-grey six">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col col-12 col-md-8">
+                    <h2 class="title">COLLABORATORS</h2>
+                </div>
+            </div>
+            <div class="d-flex text-center">
+                <div class="col col-12 col-md-6 offset-md-3">
+                    <div id="colab-slide">
+                        <div class="slide">
+                            <img src="assets/images/home/colab-1.jpg" alt="">
+                            <p class="sub__title">ACTORS</p>
+                            <div class="discription">
+                                <p>A Famous Tamil & Telugu actor, she is known for films like Evaru, Awe,Subramanyam for Sale, Nirnayam, and is currently working with us on the south Indian remake of the Korean movie Sakini Dakini.</p>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <img src="assets/images/home/colab-1.jpg" alt="">
+                            <p class="sub__title">ACTORS</p>
+                            <div class="discription">
+                                <p>A Famous Tamil & Telugu actor, she is known for films like Evaru, Awe,Subramanyam for Sale, Nirnayam, and is currently working with us on the south Indian remake of the Korean movie Sakini Dakini.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections seven">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col col-12 col-md-8">
+                    <h2 class="title">GALLERY</h2>
+                </div>
+            </div>
+            <div class="d-flex">
+                <div class="col col-12 col-md-10 offset-md-1">
+                    <div class="slider-wrapper">
+                        <div class="prev__arrow arrow"></div>
+                        <div class="next__arrow arrow"></div>
+                        <div id="gallery-slide">
+                            <div class="slide">
+                                <img src="assets/images/home/gallery-1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/home/gallery-1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/home/gallery-1.jpg" alt="" class="img-responsive">
+                            </div>
+                            <div class="slide">
+                                <img src="assets/images/home/gallery-1.jpg" alt="" class="img-responsive">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sections newsletter">
+        <div class="container">
+            <div class="d-flex">
+                <div class="col col-12 col-md-6 offset-md-3 text-center">
+                    <form action="">
+                        <div class="group">
+                            <input type="email" placeholder="Email Address" />
+                            <button type="submit">Submit</button>
+                        </div>
+                    </form>
+                    <p>Stay informed-subscribe to our newsletter</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer__rows">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="col col-12 col-md-4">
+                        <a href="index.html"><img src="assets/images/logo.png" alt="" width="150"></a>
+                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard .</p>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <div class="info">
+                            <p>Guru Filme Private Limited </br>
+                            Plot No. 12, Road No 3,</br>
+                            Panchavati Society Colony, Behind AK Enclave</br>
+                            Green Valley, Banjara Hills, Hyderabad, Telangana 5000 34</p>
+                        </div>
+                        <div class="info">
+                            <p>info@gurugroup.in</p>
+                        </div>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <ul class="footer__social">
+                            <li><a href="#" class="fb">Facebook</a></li>
+                            <li><a href="#" class="yt">Youtube</a></li>
+                            <li><a href="#" class="tt">Twitter</a></li>
+                            <li><a href="#" class="ig">Instagram</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer__copyrights">
+            <div class="container">
+                <div class="d-flex">
+                    <div class="col col-12 col-md-4 offset-md-4">
+                        <p>Copywrite &copy; GuruGroup. 2021</p>
+                    </div>
+                    <div class="col col-12 col-md-4">
+                        <p>Designed & Developed by TETRAMIND</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!--js-->
+    <script src="assets/js/jquery-3.6.0.min.js"></script>
+    <script src="assets/slick/slick.min.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
 </html>

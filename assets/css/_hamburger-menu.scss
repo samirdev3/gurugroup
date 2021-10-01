@@ -1,0 +1,25 @@
+#menu-fullscreen {
+    position: fixed;
+    width: 100%;
+    min-height: 100%;
+    background-color: $red;
+    z-index: 100;
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &.menu {
+        display: flex;
+    }
+    a {
+        text-decoration: none;
+        color: white;
+        font-size: 2rem;
+        margin: 2%;
+        opacity: 0.8;
+        transition: opacity 0.2s linear;
+        &:hover {
+            opacity: 1;
+        }
+    }
+}

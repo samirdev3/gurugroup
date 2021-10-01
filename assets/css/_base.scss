@@ -1,0 +1,155 @@
+/** DEFAULT **/
+::selection { 
+    background-color: $primaryColor;
+    color: black;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-size: 16px;
+    font-weight: 300;
+    font-family: $bodyRegular;
+}
+body{
+    font-size: 16px;
+    line-height: 1.4;
+    color: #000;
+    min-height: 100vh;
+    overflow: hidden;
+    &.loaded{
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
+}
+a,
+a:visited,
+button{
+    text-decoration: none;
+    outline: none;
+    color: #000;
+    cursor: pointer;
+}
+ul,
+ol{
+    margin: 0;
+    list-style-type: none;
+    li{
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6{
+    font-family: $headingRegular;
+    line-height: 1.2;
+    margin-bottom: 15px;
+}
+p{
+    margin-bottom: 20px;
+}
+small{
+    font-size: 80%;
+}
+img{
+    max-width: 100%;
+    height: auto;
+}
+.img-responsive{
+    width: 100%;
+}
+.m-auto{
+    margin-right: auto;
+    margin-left: auto;
+}
+.mb-0{
+    margin-bottom: 0;
+}
+.position-relative{
+    position: relative;
+}
+.clear{
+    clear:both
+}
+.clearfix{
+    position: relative;
+    &::after{
+        content: '';
+        clear: both;
+        display: block;
+    }
+}
+@include textAlign(left center right);
+.d-block{
+    display: block;
+}
+.d-none{
+    display: none;
+}
+.container{
+    width: 100%;
+    max-width: $containerWidth;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: $gutterSize;
+    padding-right: $gutterSize;
+    .d-flex{
+        margin-right: -$gutterSize;
+        margin-left: -$gutterSize;
+    }
+}
+.container-fluid{
+    @extend .container;
+    max-width: auto;
+}
+
+.d-flex{
+    display: flex;
+    flex-wrap: wrap;
+    .col{
+        padding-left: $gutterSize;
+        padding-right: $gutterSize;
+    }
+    @include flexCol($col-list, '');
+}
+@media (min-width: 576px) {
+    .d-flex{
+        @include flexCol($col-list, sm);
+    }
+    .d-sm-block{
+        display: block;
+    }
+    .d-sm-none{
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    .d-flex{
+        @include flexCol($col-list, md);
+    }
+    .d-md-block{
+        display: block;
+    }
+    .d-md-none{
+        display: none;
+    }
+}
+.flex-direction-column{
+    flex-direction: column;
+}
+.flex-align-center{
+    align-items: center;
+}
+.flex-justify-center{
+    justify-content: center;
+}
+.flex-justify-space-between{
+    justify-content: space-between;
+}
+.flex-justify-space-evenly{
+    justify-content: space-evenly;
+}

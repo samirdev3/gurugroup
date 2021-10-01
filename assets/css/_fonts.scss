@@ -1,2 +1,15 @@
-@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+@font-face {
+    font-family: "body-regular";
+    src: url("../fonts/azosans-regular.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "body-light";
+    src: url("../fonts/azosans-light.woff") format("woff");
+    font-display: swap;
+}
+@font-face {
+    font-family: "heading-regular";
+    src: url("../fonts/abrilfatface-regular.woff") format("woff");
+    font-display: swap;
+}
